@@ -1,0 +1,174 @@
+body {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(43, 42, 42);
+    border-bottom: 2px solid #333;
+    
+}
+
+.search-box p {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.search-box input {
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #555;
+    border-radius: 5px;
+    /* background-color: #1c1c1c; */
+    color: black;
+}
+
+.search-box input::placeholder {
+    color: #888;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    background-color: rgb(17, 17, 17);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie img {
+    width: 250px;
+    height: 350px;
+    border: 2px solid white;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 60px;
+}
+
+.desc h1 {
+    color: rgb(197, 168, 6);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.desc p {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.desc .heading {
+    font-weight: 600;
+}
+
+.desc .rating {
+    border-radius: 3px;
+    background: rgb(197, 168, 6);
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.genre {
+    background-color: rgb(77, 77, 77);
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.language {
+    font-style: italic;
+    color: rgb(192, 165, 11);
+    margin-top: 5px;
+}
+
+.won {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.icon {
+    color: rgb(192, 165, 11);
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .movie {
+        flex-direction: column;
+       
+    }
+
+    .movie img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .desc {
+        margin-top: 20px;
+    }
+
+    .desc h1 {
+        font-size: 24px;
+    }
+
+    .desc p {
+        font-size: 14px;
+    }
+
+    .search-box p {
+        font-size: 18px;
+    }
+
+    .search-box input {
+        width: 200px;
+        font-size: 14px;
+    }
+}
+.movie-dropdown {
+    margin: 10px auto;
+    padding: 10px;
+    list-style: none;
+    max-width: 300px;
+    background: rgb(43, 42, 42);
+    border: 1px solid #555;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 200px;
+  }
+  
+  .movie-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid #555;
+  }
+  
+  .movie-dropdown li:hover {
+    background-color: rgb(77, 77, 77);
+  }
+  
